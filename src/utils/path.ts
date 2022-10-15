@@ -25,9 +25,9 @@ export const findBestRoute = async (
 
     const cloneUniswapContractDetails = {
         v2Override: {
-            routerAddress: "0x51aba405de2b25e5506dea32a6697f450ceb1a17",
-            factoryAddress: "0x7cFB780010e9C861e03bCbC7AC12E013137D47A5",
-            pairAddress: "0x7cFB780010e9C861e03bCbC7AC12E013137D47A5",
+            routerAddress: "0x83f465457c8caFbe85aBB941F20291F826C7F72A",
+            factoryAddress: "0xd4688F52e9944A30A7eaD808E9A86F95a0661DF8",
+            pairAddress: "0xd4688F52e9944A30A7eaD808E9A86F95a0661DF8",
         },
     };
 
@@ -43,20 +43,30 @@ export const findBestRoute = async (
             uniswapVersions: [UniswapVersion.v2],
             cloneUniswapContractDetails: cloneUniswapContractDetails,
             customNetwork: {
-                nameNetwork: "Polygon Mainnet",
+                nameNetwork: "Bitgert Mainnet",
                 multicallContractAddress:
-                    "0x275617327c958bD06b5D6b871E7f491D76113dd8",
+                    "0x3AFd2494833cbB234B363440E65BC2A171Dbb267",
                 nativeCurrency: {
-                    name: "Polygon",
-                    symbol: "MATIC",
+                    name: "Brise",
+                    symbol: "BRISE",
                 },
                 nativeWrappedTokenInfo: {
-                    chainId: 137,
+                    chainId: 32520,
                     contractAddress:
-                        "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+                        "0x0eb9036cbE0f052386f36170c6b07eF0a0E3f710",
                     decimals: 18,
-                    symbol: "WMATIC",
-                    name: "Wrapped MATIC",
+                    symbol: "WBRISE",
+                    name: "Wrapped BRISE",
+                },
+                baseTokens: {
+                    dai: {
+                        chainId: 32520,
+                        contractAddress:
+                            "0x0eb9036cbE0f052386f36170c6b07eF0a0E3f710",
+                        decimals: 18,
+                        symbol: "WBRISE",
+                        name: "Wrapped BRISE",
+                    },
                 },
             },
         }),
@@ -77,6 +87,8 @@ export const findBestRoute = async (
                     .expectedConvertQuoteOrTokenAmountInMaxWithSlippage,
         };
     } catch (error) {
+        console.log("errkroejmomv: ", error);
+
         throw error;
     }
 };
