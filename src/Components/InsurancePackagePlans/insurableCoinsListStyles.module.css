@@ -13,7 +13,7 @@
     h-8
     relative;
 }
-.coin_logo__wrapper:nth-child(2) {
+/* .coin_logo__wrapper:nth-child(2) {
     @apply right-3;
 }
 .coin_logo__wrapper:nth-child(3) {
@@ -21,6 +21,13 @@
 }
 .coin_logo__wrapper:nth-child(4) {
     @apply right-9;
+} */
+
+.coin_logo__wrapper:nth-child(2) {
+    @apply right-5;
+}
+.coin_logo__wrapper:nth-child(3) {
+    @apply right-8;
 }
 
 .remaining__test {
