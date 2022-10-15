@@ -11,13 +11,13 @@ export const padZero = (num: number) => {
 export const getChainId = () => {
     return process.env.NEXT_PUBLIC_DAPP_ENVIRONMENT === "mainnet" ||
         process.env.NEXT_PUBLIC_DAPP_ENVIRONMENT === "staging"
-        ? 137
-        : 80001;
+        ? 32520
+        : 64668;
 };
 
 export const chainIdToName = {
-    137: "Polygon Mainnet",
-    80001: "Polygon Mumbai Testnet",
+    32520: "Brise Chain Mainnet",
+    64668: "Brise Chain Testnet",
 };
 
 export const shortenAddress = (address: string): string => {

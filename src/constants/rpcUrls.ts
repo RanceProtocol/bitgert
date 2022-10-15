@@ -1,4 +1,4 @@
 export const RPC_URLS = {
-    137: "https://polygon-rpc.com",
-    80001: "https://matic-testnet-archive-rpc.bwarelabs.com",
+    32520: "https://mainnet-rpc.brisescan.com",
+    64668: "https://testnet-rpc.brisescan.com",
 };

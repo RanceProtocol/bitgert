@@ -12,9 +12,9 @@ export const bitKeep = new BitKeepConnector({
 });
 export const walletConnect = new WalletConnectConnector({
     rpc: {
-        137: RPC_URLS[137],
+        32520: RPC_URLS[32520],
     },
-    chainId: 137,
+    chainId: 32520,
     qrcode: true,
     bridge: "https://bridge.walletconnect.org",
 });
