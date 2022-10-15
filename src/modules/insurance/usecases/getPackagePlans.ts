@@ -11,6 +11,8 @@ export const getPackagePlans = async (
 > => {
     try {
         const packagePlansLength = await contract.getPackagePlansLength();
+        const router = await contract.uniswapRouter();
+
         const plans: IRanceProtocol.PackagePlanStructOutput[] = (
             await contract.getAllPackagePlans(0, packagePlansLength)
         ).filter((plan) => plan.isActivated);
@@ -23,19 +25,8 @@ export const getPackagePlans = async (
             return { ...item, ...getDurationData(item.periodInSeconds) };
         });
 
-        // const calls = [
-        //     {
-        //         address: contract.address,
-        //         name: "getAllPackagePlans",
-        //         params: [0, 3],
-        //     },
-        // ];
-
-        // const res = await multicall(RanceProtocolAbi, calls);
-
-        // console.log("rrrrrrr: ", res);
-
         const insureCoinLength = await contract.getInsureCoinsLength();
+
         const insurableCoinsNames: string[] = await contract.getInsureCoins(
             0,
             insureCoinLength
@@ -47,10 +38,6 @@ export const getPackagePlans = async (
                 await contract.insureCoinNameToAddress(name),
             ])
         );
-        // we want matic at the third position
-        const coinAtPosition2 = insurableCoinsEntries[2];
-        insurableCoinsEntries[2] = insurableCoinsEntries[3];
-        insurableCoinsEntries[3] = coinAtPosition2;
 
         const insurableCoinsObject = Object.fromEntries(insurableCoinsEntries);
 

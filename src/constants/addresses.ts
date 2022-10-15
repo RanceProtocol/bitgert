@@ -1,18 +1,18 @@
 export const ranceProtocol = {
-    staging: "0x29062E2B9771FB81Cd088245B4137F538B65099b",
-    mainnet: "0x8D9fdFD636229Ec36c5a5597e12374c7555ddC4E",
+    staging: "0x3ee9184680f9BB2334F67d83609bdc16d70F19E0",
+    mainnet: "0x3ee9184680f9BB2334F67d83609bdc16d70F19E0",
 };
 
-export const stakingContractAddresses = {
-    staging: [
-        "0x95aa44a85647248216915331BC71248838F6AfaC",
-        "0x90E29EeF76c85184A230101DfC5425eE1bc15812",
-    ],
-    mainnet: [
-        "0x95aa44a85647248216915331BC71248838F6AfaC",
-        "0x90E29EeF76c85184A230101DfC5425eE1bc15812",
-    ],
-};
+// export const stakingContractAddresses = {
+//     staging: [
+//         "0x95aa44a85647248216915331BC71248838F6AfaC",
+//         "0x90E29EeF76c85184A230101DfC5425eE1bc15812",
+//     ],
+//     mainnet: [
+//         "0x95aa44a85647248216915331BC71248838F6AfaC",
+//         "0x90E29EeF76c85184A230101DfC5425eE1bc15812",
+//     ],
+// };
 
 export const tokens = {
     mainnet: {
@@ -25,16 +25,16 @@ export const tokens = {
     },
 };
 
-export const stakingAddressToPool: { [key: string]: number } = {
-    "0x95aa44a85647248216915331BC71248838F6AfaC": 0, //staging
-    "0x90E29EeF76c85184A230101DfC5425eE1bc15812": 1, //staging
-};
+// export const stakingAddressToPool: { [key: string]: number } = {
+//     "0x95aa44a85647248216915331BC71248838F6AfaC": 0, //staging
+//     "0x90E29EeF76c85184A230101DfC5425eE1bc15812": 1, //staging
+// };
 
-export const masterRanceWallet = {
-    staging: "0xb27D527Dc2b5b7811d13Dc0997870BcE6299df61",
-    mainnet: "0xb27D527Dc2b5b7811d13Dc0997870BcE6299df61", // replaced with mainnet wallet later
-};
+// export const masterRanceWallet = {
+//     staging: "0xb27D527Dc2b5b7811d13Dc0997870BcE6299df61",
+//     mainnet: "0xb27D527Dc2b5b7811d13Dc0997870BcE6299df61", // replaced with mainnet wallet later
+// };
 
 export const POLYGONMM_ROUTER = "0x51aba405de2b25e5506dea32a6697f450ceb1a17";
 
-export const multicall2Address = "0x275617327c958bD06b5D6b871E7f491D76113dd8";
+export const multicall2Address = "0x3AFd2494833cbB234B363440E65BC2A171Dbb267";
