@@ -1,3 +1,5 @@
+import { ethers } from "ethers";
+
 export const ranceProtocol = {
     staging: "0x3ee9184680f9BB2334F67d83609bdc16d70F19E0",
     mainnet: "0x3ee9184680f9BB2334F67d83609bdc16d70F19E0",
@@ -16,12 +18,14 @@ export const ranceProtocol = {
 
 export const tokens = {
     mainnet: {
-        RANCE: "0x885C73a4F42F321a76F556CC99514A9BBd8e29bD",
-        USDC: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+        RANCE: ethers.constants.AddressZero,
+        USDT: "0xDe14b85cf78F2ADd2E867FEE40575437D5f10c06",
+        USDC: "0xcf2DF9377A4e3C10e9EA29fDB8879d74C27FCDE7",
     },
     staging: {
-        RANCE: "0xa92CF4945dC605e29a72A965Ef55f2D342c70f8A",
-        USDC: "0x627556f80539153717609A7Eac309c3C54c5480D",
+        RANCE: ethers.constants.AddressZero,
+        USDT: "0xDe14b85cf78F2ADd2E867FEE40575437D5f10c06",
+        USDC: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
     },
 };
 

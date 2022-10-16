@@ -55,24 +55,19 @@ export const getDurationData = (periodInSeconds: number) => {
 export const addressToCoinDetails: {
     [key: string]: any;
 } = {
-    "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6": {
-        id: "wrapped-bitcoin",
-        symbol: "wbtc",
-        name: "Wrapped Bitcoin",
+    "0x0e11DCE06eF2FeD6f78CEF5144F970E1184b4298": {
+        id: "sphynx",
+        symbol: "sphynx",
+        name: "Sphynx",
     },
-    "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619": {
-        id: "weth",
-        symbol: "weth",
-        name: "WETH",
+    "0x0eb9036cbE0f052386f36170c6b07eF0a0E3f710": {
+        id: "wrapped-brise",
+        symbol: "wbrise",
+        name: "Wrapped Brise",
     },
-    "0x22a31bD4cB694433B6de19e0aCC2899E553e9481": {
-        id: "mmfinance-polygon",
-        symbol: "mmf",
-        name: "MMFinance (Polygon)",
-    },
-    "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270": {
-        id: "wmatic",
-        symbol: "wmatic",
-        name: "Wrapped Matic",
+    "0x611a767AE0b231e82Da8711294A378F5639Af037": {
+        id: "wbnb",
+        symbol: "wbnb",
+        name: "Wrapped BNB",
     },
 };

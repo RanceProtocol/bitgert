@@ -29,7 +29,7 @@ export const ConnectedModal: FC<IProps> = ({
         toggleAccountModal(dispatch);
     };
     const { account } = useWeb3React();
-    const BUSD = useToken(
+    const USDC = useToken(
         tokens[process.env.NEXT_PUBLIC_DAPP_ENVIRONMENT as keyof typeof tokens]
             .USDC
     );
