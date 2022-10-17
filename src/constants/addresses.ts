@@ -1,8 +1,8 @@
 import { ethers } from "ethers";
 
 export const ranceProtocol = {
-    staging: "0x3ee9184680f9BB2334F67d83609bdc16d70F19E0",
-    mainnet: "0x3ee9184680f9BB2334F67d83609bdc16d70F19E0",
+    staging: "0xec35f18e088dc5BaDaBc3Dfd82780478C9EFaaf0",
+    mainnet: "0xec35f18e088dc5BaDaBc3Dfd82780478C9EFaaf0",
 };
 
 // export const stakingContractAddresses = {

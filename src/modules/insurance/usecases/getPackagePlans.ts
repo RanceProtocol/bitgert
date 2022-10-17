@@ -11,7 +11,6 @@ export const getPackagePlans = async (
 > => {
     try {
         const packagePlansLength = await contract.getPackagePlansLength();
-        const router = await contract.uniswapRouter();
 
         const plans: IRanceProtocol.PackagePlanStructOutput[] = (
             await contract.getAllPackagePlans(0, packagePlansLength)
