@@ -87,8 +87,6 @@ export const findBestRoute = async (
                     .expectedConvertQuoteOrTokenAmountInMaxWithSlippage,
         };
     } catch (error) {
-        console.log("errkroejmomv: ", error);
-
         throw error;
     }
 };

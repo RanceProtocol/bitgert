@@ -120,6 +120,8 @@ const PackagePurchaseModal: FC<IProps> = ({
                     amount: formDetails.amount,
                     provider: library || getDefaultProvider(),
                 });
+                console.log("trade: ", trade);
+
                 setTradeDetails({ processing: false, ...trade });
             } catch (error) {
                 const toastBody = CustomToast({
