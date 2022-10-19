@@ -1,8 +1,8 @@
 import { ethers } from "ethers";
 
 export const ranceProtocol = {
-    staging: "0xec35f18e088dc5BaDaBc3Dfd82780478C9EFaaf0",
-    mainnet: "0xec35f18e088dc5BaDaBc3Dfd82780478C9EFaaf0",
+    staging: "",
+    mainnet: "0x252cf390215BBFaB36790011D3240676C327b64d",
 };
 
 // export const stakingContractAddresses = {
@@ -25,7 +25,7 @@ export const tokens = {
     staging: {
         RANCE: ethers.constants.AddressZero,
         USDT: "0xDe14b85cf78F2ADd2E867FEE40575437D5f10c06",
-        USDC: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+        USDC: "0xcf2DF9377A4e3C10e9EA29fDB8879d74C27FCDE7",
     },
 };
 
